@@ -1,0 +1,13 @@
+expected,endpoint,label,score,latency_ms,proba,keywords,text
+High (likely),analyze_proba,High,0.92,5,High=0.92 | Medium=0.00 | Low=0.08,,We sell your personal information to third-party advertisers.
+High (likely),analyze_proba,High,0.96,5,High=0.96 | Low=0.00 | Medium=0.03,,Your data may be shared with our partners for targeted marketing.
+High (likely),analyze_proba,High,0.65,5,High=0.65 | Medium=0.00 | Low=0.35,,We disclose personal information to third parties without consent.
+Medium (likely),analyze_proba,Medium,0.90,5,High=0.09 | Low=0.01 | Medium=0.90,,We may share your information with service providers for analytics.
+Medium (likely),analyze_proba,Medium,0.98,6,High=0.00 | Low=0.02 | Medium=0.98,,You can opt out of certain data sharing by changing your settings.
+Medium (likely),analyze_proba,Medium,0.98,5,High=0.02 | Low=0.00 | Medium=0.98,,We may use cookies and tracking technologies to improve our services.
+Low (likely),analyze_proba,Low,0.74,5,High=0.21 | Low=0.74 | Medium=0.04,,We never sell your personal information.
+Low (likely),analyze_proba,Low,0.96,6,High=0.00 | Low=0.96 | Medium=0.04,,Your data is only used to provide the service you requested.
+Low (likely),analyze_proba,Low,0.73,5,High=0.20 | Low=0.73 | Medium=0.07,,We collect minimal information necessary to operate our website.
+Edge,analyze_proba,Medium,0.90,5,High=0.09 | Low=0.01 | Medium=0.90,,We may share anonymized data for research purposes.
+Edge,analyze_proba,Low,0.99,5,High=0.01 | Low=0.99 | Medium=0.00,,We require your consent before collecting sensitive information.
+Edge,analyze_proba,High,0.91,5,High=0.91 | Low=0.04 | Medium=0.05,,Personal data may be transferred outside your country.
