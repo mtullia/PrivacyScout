@@ -1,0 +1,56 @@
+﻿<!-- frontend/app.html -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Privacy Risk Scout</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="prs-popup">
+    <div class="prs-container">
+        <h1 class="prs-title">Privacy Risk Scout</h1>
+
+        <p class="prs-subtitle">
+            Analyze the current page or its privacy policy for privacy risk (High / Medium / Low).
+        </p>
+
+        <!-- Current URL (for debugging / visibility) -->
+        <div id="prs-current-url" style="font-size: 12px; margin-bottom: 8px; opacity: 0.8;">
+            Current URL:
+            <span id="prs-url">–</span>
+        </div>
+
+        <!-- Status / error messages -->
+        <div id="prs-status" class="prs-status"></div>
+
+        <!-- Candidate privacy policy picker (top 3 URLs) -->
+        <div id="prs-policy-picker" class="prs-policy-picker"></div>
+
+        <!-- Analyze button -->
+        <button id="prs-analyze" class="prs-button">
+            Analyze This Page
+        </button>
+
+        <!-- Results -->
+        <div id="prs-result" class="prs-result">
+            <div class="prs-result-row">
+                <span class="prs-label-caption">Risk label:</span>
+                <span id="prs-label" class="prs-label-value">–</span>
+            </div>
+
+            <div class="prs-result-row">
+                <span class="prs-label-caption">Risk rating:</span>
+                <span id="prs-score" class="prs-score-value">–</span>
+            </div>
+
+            <h2 class="prs-section-title">Class probabilities</h2>
+            <ul id="prs-proba-list" class="prs-list"></ul>
+
+            <h2 class="prs-section-title">Top keywords</h2>
+            <ul id="prs-keywords" class="prs-list"></ul>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy Risk Scout",
+  "version": "1.0.0",
+  "description": "Analyze any web page for privacy risk (High / Medium / Low) using an ML backend.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1:8000/*"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "action": {
+    "default_popup": "frontend/app.html",
+    "default_title": "Privacy Risk Scout"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "scripts/content-script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
